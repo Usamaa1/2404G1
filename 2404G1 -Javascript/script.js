@@ -413,97 +413,385 @@
 
 
 
-let persons = [
-    {
-    firstName: 'Aslam',
-    lastName: 'Riaz',
-    age: 64,
-    city: 'Karachi',
-    gender: 'Male',
-    country: 'Pakistan',
-    education: 'BSSE',
-    job: 'Labour Manager',
-    isAlive: true
-},{
-    firstName: 'Zahid',
-    lastName: 'Khan',
-    age: 56,
-    city: 'Islamabad',
-    gender: 'Male',
-    country: 'Pakistan',
-    education: 'Fashion Designing',
-    job: 'Fashion Designer',
-    isAlive: true
-},{
-    firstName: 'Ashraf',
-    lastName: 'Fakhir',
-    age: 25,
-    city: 'Lahore',
-    gender: 'Male',
-    country: 'Pakistan',
-    education: 'BEE',
-    job: 'Peon',
-    isAlive: false
-},
-{
-    firstName: 'Muskan',
-    lastName: 'Mansoor',
-    age: 22,
-    city: 'Karachi',
-    gender: 'Female',
-    country: 'Pakistan',
-    education: 'HDSE',
-    job: 'SEO Expert',
-    isAlive: true
-},{
-    firstName: 'Nimra',
-    lastName: 'Jilani',
-    age: 64,
-    city: 'Karachi',
-    gender: 'Female',
-    country: 'Pakistan',
-    education: 'ADSE',
-    job: null,
-    isAlive: true
-}
+// let persons = [
+//     {
+//     firstName: 'Aslam',
+//     lastName: 'Riaz',
+//     age: 64,
+//     city: 'Karachi',
+//     gender: 'Male',
+//     country: 'Pakistan',
+//     education: 'BSSE',
+//     job: 'Labour Manager',
+//     isAlive: true
+// },{
+//     firstName: 'Zahid',
+//     lastName: 'Khan',
+//     age: 56,
+//     city: 'Islamabad',
+//     gender: 'Male',
+//     country: 'Pakistan',
+//     education: 'Fashion Designing',
+//     job: 'Fashion Designer',
+//     isAlive: true
+// },{
+//     firstName: 'Ashraf',
+//     lastName: 'Fakhir',
+//     age: 25,
+//     city: 'Lahore',
+//     gender: 'Male',
+//     country: 'Pakistan',
+//     education: 'BEE',
+//     job: 'Peon',
+//     isAlive: false
+// },
+// {
+//     firstName: 'Muskan',
+//     lastName: 'Mansoor',
+//     age: 22,
+//     city: 'Karachi',
+//     gender: 'Female',
+//     country: 'Pakistan',
+//     education: 'HDSE',
+//     job: 'SEO Expert',
+//     isAlive: true
+// },{
+//     firstName: 'Nimra',
+//     lastName: 'Jilani',
+//     age: 64,
+//     city: 'Karachi',
+//     gender: 'Female',
+//     country: 'Pakistan',
+//     education: 'ADSE',
+//     job: null,
+//     isAlive: true
+// }
 
-]
-
-
-
-
-let isUserExist = false;
-
-let userSearch = prompt('Enter Name');
+// ]
 
 
 
-for (let i = 0; i < persons.length; i++) {
 
-        if(persons[i].firstName.toLowerCase == userSearch.toLowerCase)
-        {
-            isUserExist = true;
-            break;
-        }
-        else
-        {
-            isUserExist = false;
-        }
+// let isUserExist = false;
+
+// let userSearch = prompt('Enter Name');
+
+
+
+// for (let i = 0; i < persons.length; i++) {
+
+//         if(persons[i].firstName.toLowerCase == userSearch.toLowerCase)
+//         {
+//             isUserExist = true;
+//             break;
+//         }
+//         else
+//         {
+//             isUserExist = false;
+//         }
+
+// }
+
+
+
+
+
+// if(isUserExist)
+// {
+//         console.log('Yes I Found your name')
+// }
+// else
+// {
+//     console.log("Sorry! I didn't Found your name");
+// }
+
+
+// let userInpEmail = prompt('Enter your Email');
+// let userInpPassword = prompt('Enter your Password');
+
+// const userArray = [
+//     {
+//         userName: "Tanveer Sohail",
+//         userEmail: 'tanveer@gmail.com',
+//         userPass: '112'
+//     },
+//     {
+//         userName: "Zahid Khan",
+//         userEmail: 'zahid@gmail.com',
+//         userPass: 'zahid123'
+//     },
+//     {
+//         userName: "M Ammar",
+//         userEmail: 'ammar@gmail.com',
+//         userPass: 'ammar123'
+//     }
+// ];
+
+// let isUserFound = true;
+
+
+// for (let i = 0; i < userArray.length; i++) {
+
+//     if(userInpEmail == userArray[i].userEmail && userInpPassword == userArray[i].userPass)
+//     {
+//         // if(userInpPassword == userArray[i].userPass)
+//         //     {
+//         //         console.log('Password Found')
+
+//         //     }
+//         document.write(`Welcome! ${userArray[i].userName}`)
+//         console.log('Email and Password Found')
+//         isUserFound = true;
+//         break;
+//         }
+//         else
+//         {
+//             isUserFound = false;
+//         }
+
+
+//     }
+
+//     if(!isUserFound)
+//     {
+
+//             console.log('Email and Password is incorrect')
+//     }
+
+
+
+// Marksheet Example with If and Switch
+
+
+
+// let percentage = prompt('Enter Your Percentage');
+// let grade;
+
+// if (percentage <= 39) {
+//     console.log('Sorry you are Failed in Exam 😥')
+//     grade = 'F';
+// }
+// else if (percentage < 50) {
+//     console.log('D Grade Satifactory Performance')
+//     grade = 'D';
+// }
+// else if (percentage < 60) {
+//     console.log('C Grade Satifactory Performance')
+//     grade = 'C';
+// }
+// else if (percentage < 70) {
+//     console.log('B Grade Need to perform well')
+//     grade = 'B';
+// }
+// else if (percentage < 80) {
+//     console.log('A Grade Congratulation 🎉')
+//     grade = 'A';
+// }
+// else if (percentage < 90) {
+//     console.log('A1 Grade Congratulation 🎉🎉')
+//     grade = 'A1';
+// }
+// else if (percentage < 100) {
+//     console.log('A+ Grade Congratulation 🎉🎉🎉')
+//     grade = 'A+';
+// }
+// else {
+//     console.log('Enter valid Value')
+// }
+
+
+// switch (grade) {
+
+//     case 'A+':
+//         console.log('Pass')
+//     break;
+//     case 'A1':
+//         console.log('Pass')
+//     break;
+//     case 'A':
+//         console.log('Pass')
+//     break;
+//     case 'B':
+//         console.log('Pass')
+//     break;
+//     case 'C':
+//         console.log('Pass')
+//     break;
+//     case 'D':
+//         console.log('Pass')
+//     break;
+//     case 'F':
+//         console.log('Fail')
+//     break;
+
+
+// }
+
+
+
+
+
+// let percentage = prompt('Enter Your Percentage');
+
+
+// if (percentage <= 39) {
+//     console.log('Sorry you are Failed in Exam 😥')
+//     grade = 'F';
+// }
+// else if (percentage < 50) {
+//     console.log('D Grade Satifactory Performance')
+//     grade = 'D';
+// }
+// else if (percentage < 60) {
+//     console.log('C Grade Satifactory Performance')
+//     grade = 'C';
+// }
+// else if (percentage < 70) {
+//     console.log('B Grade Need to perform well')
+//     grade = 'B';
+// }
+// else if (percentage < 80) {
+//     console.log('A Grade Congratulation 🎉')
+//     grade = 'A';
+// }
+// else if (percentage < 90) {
+//     console.log('A1 Grade Congratulation 🎉🎉')
+//     grade = 'A1';
+// }
+// else if (percentage < 100) {
+//     console.log('A+ Grade Congratulation 🎉🎉🎉')
+//     grade = 'A+';
+// }
+// else {
+//     console.log('Enter valid Value')
+// }
+
+
+
+
+
+// Ternary Operator
+
+// let isPersonAlive = 'Alive';
+
+
+// if(isPersonAlive == 'alive')
+//     {
+//         console.log('You are not applicable for your Death Certificate 😎')
+//     }
+//     else
+//     {
+        
+//         console.log('You are applicable for your Death Certificate ⚰⚰')
+//     }
+
+
+    // isPersonAlive == 'alive' || isPersonAlive == 'Alive'
+    // ?  
+    // console.log('You are not applicable for your Death Certificate 😎') 
+    // :   
+    // console.warn('You are applicable for your Death Certificate ⚰⚰')
+
+
+
+
+// ************* FUNCTIONS *************
+
+
+
+
+
+
+// let num = 34;
+
+// function plus10()
+// {
     
-}
+//     console.log(num + 10)
+// }
+
+
+// plus10()
+
+// // num = 78;
+
+// plus10();
+
+
+
+// let num1,num2;
+
+
+// num1 = 23;
+// num2 = 54
+
+
+// function add(num1,num2, operator)
+// {
+//     console.log(num1 + num2)
+//     // console.log(num1 - num2)
+//     // console.log(num1 / num2)
+//     // console.log(num1 * num2)
+// }
+
+
+// add(45,6)
+// add(5,6)
+// add(4,5)
+
+
+// function square(num) {
+//     console.log(num**2)
+// }
+
+
+
+//ARROW FUNCTIONS
+
+
+// const square = (num) => console.log(num**2)
+// const square = (num) => 
+//     {
+//         console.log(num**2)
+//     }
+
+// square(8)
+
+
+//EXAMPLE 1
+
+// let sub = function(a,b)
+// {
+//     console.log(a-b)
+// }
+
+// sub(9,5)
+
+// sub = 45;
+
+// console.log(sub)
+
+
+//EXAMPLE 2
+// const sub = function(a,b)
+// {
+//     console.log(a-b)
+// }
+
+// sub(9,5)
+
+// sub = 45;
+
+// console.log(sub)
 
 
 
 
 
-if(isUserExist)
-{
-        console.log('Yes I Found your name')
-}
-else
-{
-    console.log("Sorry! I didn't Found your name");
-}
+
+
+
+
 
 
 
